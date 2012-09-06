@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "SimpleTextRenderer.h"
 /*
-   STLDODN '12 - Namespaces (using)
+   HDC '12 - Intermediate - Namespaces (using)
 */
 
 using namespace D2D1;
@@ -24,8 +24,8 @@ static const ColorF BackgroundColors[] =
 };
 
 /*
- STLDODN '12 - Declaration vs Implementation (impl)
-   STLDODN '12 - Member Initialization
+ HDC '12 - Basic - Declaration vs Implementation (impl)
+   HDC '12 - Intermediate - Member Initialization
 */
 SimpleTextRenderer::SimpleTextRenderer() :
 	m_renderNeeded(true),
@@ -68,7 +68,7 @@ void SimpleTextRenderer::CreateDeviceResources()
 		);
 
 /*
-   STLDODN '12 - Example of intrusive C++/CX code
+   HDC '12 - WinRT Example of intrusive C++/CX code
 */
 	Platform::String^ text = "Hello, DirectX!";
 

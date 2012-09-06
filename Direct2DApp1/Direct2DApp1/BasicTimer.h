@@ -3,7 +3,7 @@
 #include <wrl.h>
 
 /*
-   STLDODN '12 - Another example of intrusive C++/CX code
+   HDC '12 - WinRT Another example of intrusive C++/CX code
 */
 ref class BasicTimer sealed
 {

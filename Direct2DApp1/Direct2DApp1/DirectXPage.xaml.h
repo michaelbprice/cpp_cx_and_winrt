@@ -10,7 +10,7 @@
 #include "BasicTimer.h"
 
 /*
-   STLDODN '12 - Public WinRT Component
+   HDC '12 - WinRT Public Component
 */
 namespace Direct2DApp1
 {

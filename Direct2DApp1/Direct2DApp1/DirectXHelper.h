@@ -4,8 +4,8 @@
 namespace DX
 {
 /*
-   STLDODN '12 - Free-standing functions
-   STLDODN '12 - inlining
+   HDC '12 - Basic - Free-standing functions
+   HDC '12 - Intermediate - inlining
 */
 	inline void ThrowIfFailed(HRESULT hr)
 	{

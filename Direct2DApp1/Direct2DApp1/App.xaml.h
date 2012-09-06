@@ -6,7 +6,7 @@
 #pragma once
 
 /*
-   STLDODN '12 - XAML Generated header files (partial classes)
+   HDC '12 - WinRT XAML Generated header files (partial classes)
 */
 #include "App.g.h"
 #include "DirectXPage.xaml.h"

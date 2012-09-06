@@ -1,24 +1,24 @@
 ﻿#pragma once
 
 /*
-   STLDODN '12 - Preprocessor
+   HDC '12 - Basic - Preprocessor
 */
 #include "DirectXBase.h"
 
 /*
-   STLDODN '12 - Class Declaration
-   STLDODN '12 - Inheritance (single)
+   HDC '12 - Basic - Class Declaration
+   HDC '12 - Basic - Inheritance (single)
 */
 // This class renders simple text with a colored background.
 ref class SimpleTextRenderer sealed : public DirectXBase
 {
 /*
-   STLDODN '12 - Class Member Accessibility
-   STLDODN '12 - internal Accessibility for WinRT classes
+   HDC '12 - Basic - Class Member Accessibility
+   HDC '12 - WinRT internal Accessibility for classes
 */
 public:
 /*
-   STLDODN '12 - Declaration vs. Implementation (decl)
+   HDC '12 - Basic - Declaration vs. Implementation (decl)
 */
 	SimpleTextRenderer();
 
@@ -44,9 +44,9 @@ public:
 
 private:
 /*
-   STLDODN '12 - Namespaces
-   STLDODN '12 - Scope Resolution Operator '::'
-   STLDODN '12 - Windows Runtime Library
+   HDC '12 - Intermediate - Namespaces
+   HDC '12 - Intermediate - Scope Resolution Operator '::'
+   HDC '12 - WinRT Windows Runtime Library
 */
 	Microsoft::WRL::ComPtr<ID2D1SolidColorBrush> m_blackBrush;
 	Microsoft::WRL::ComPtr<IDWriteTextFormat> m_textFormat;
@@ -56,6 +56,6 @@ private:
 	bool m_renderNeeded;
 	int m_backgroundColorIndex;
 /*
-   STLDODN '12 - Semicolons
+   HDC '12 - Basic - Semicolons
 */
 };

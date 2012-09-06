@@ -31,8 +31,8 @@ App::App()
 {
 	InitializeComponent();
 /*
-   STLDODN '12 - WinRT Events
-   STLDODN '12 - WinRT Delegates
+   HDC '12 - WinRT Events
+   HDC '12 - WinRT Delegates
 */
 	Suspending += ref new SuspendingEventHandler(this, &App::OnSuspending);
 }

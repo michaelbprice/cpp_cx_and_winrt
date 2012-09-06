@@ -5,13 +5,13 @@
 using namespace Platform;
 
 /*
-   STLDODN '12 - Scope Resolution Operator (global scope)
+   HDC '12 - Intermediate - Scope Resolution Operator (global scope)
 */
 void a() { }
 
 /*
-   STLDODN '12 - Inheritance
-   STLDODN '12 - Multiple Inheritance
+   HDC '12 - Basic - Inheritance
+   HDC '12 - Intermediate - Multiple Inheritance
 */
 class BaseA
 {
@@ -38,7 +38,7 @@ public:
 };
 
 /*
-   STLDODN '12 - Object Lifetime
+   HDC '12 - Intermediate - Object Lifetime
 */
 void user_of_Derived()
 {
@@ -55,11 +55,11 @@ void user_of_Derived()
 
 
 /*
-   STLDODN '12 - Construction
-   STLDODN '12 - Destruction
-   STLDODN '12 - Copying
-   STLDODN '12 - Moving + r-value References
-   STLDODN '12 - Operator Overloading
+   HDC '12 - Basic - Construction
+   HDC '12 - Basic - Destruction
+   HDC '12 - Basic - Copying
+   HDC '12 - Intermediate -  Moving + r-value References
+   HDC '12 - Intermediate - Operator Overloading
 */
 class MyClass
 {
@@ -78,8 +78,8 @@ public:
 
 
 /*
-   STLDODN '12 - Templates
-   STLDODN '12 - Template Type Deduction
+   HDC '12 - Intermediate - Templates
+   HDC '12 - Intermediate - Template Type Deduction
 */
 template <typename T>
 void print(const T& t)
@@ -90,29 +90,29 @@ void printer()
 	print(1);
 	print("Hello World");
 	print<int>(1.0f);
-	print<double>(1.0f);
+    print<double>(1.0f);
 };
 
 
 /*
-   STLDODN '12 - WinRT Type Declarations
+   HDC '12 - WinRT Type Declarations
 */
 
 value class MyValClass { public: int i; };
 
 /*
-   STLDODN '12 - WinRT Interface Declaration
-   STLDODN '12 - WinRT Class Accessibility
+   HDC '12 - WinRT Interface Declaration
+   HDC '12 - WinRT Class Accessibility
 */
 private interface class IMyInterface { };
 
 /*
-   STLDODN '12 - WinRT Inheritance
+   HDC '12 - WinRT Inheritance
 */
 ref class MyRefBase { };
 
 /*
-   STLDODN '12 - WinRT Delegate
+   HDC '12 - WinRT Delegate
 */
 delegate void OnSomethingHandler();
 
@@ -120,20 +120,20 @@ ref class MyRefClass : public MyRefBase, public IMyInterface
 {
 public:
 /*
-   STLDODN '12 - WinRT Properties
+   HDC '12 - WinRT Properties
 */
 	property int Value;
 	
 /*
-   STLDODN '12 - WinRT Event
+   HDC '12 - WinRT Event
 */
 	event OnSomethingHandler^ OnSomething;
 };
 
 /*
-   STLDODN '12 - WinRT ^
-   STLDODN '12 - WinRT %
-   STLDODN '12 - WinRT ref new
+   HDC '12 - WinRT ^
+   HDC '12 - WinRT %
+   HDC '12 - WinRT ref new
 */
 void winrt_func()
 {
@@ -149,7 +149,7 @@ void winrt_func()
 }
 
 /*
-   STLDODN '12 - WinRT Generics
+   HDC '12 - WinRT Generics
 */
 generic <typename T>
 interface class IGenericPrinter
@@ -176,7 +176,7 @@ public:
 };
 
 /*
-   STLDODN '12 - WinRT Generics (using Templates)
+   HDC '12 - WinRT Generics (using Templates)
 */
 template <typename T>
 ref class Printer : IGenericPrinter<T>
@@ -212,7 +212,7 @@ void print_function()
 }
 
 /*
-   STLDODN '12 - Scoped Enumerations
+   HDC '12 - Intermediate - Scoped Enumerations
 */
 enum OldEnum
 {
@@ -235,7 +235,7 @@ void enum_func()
 }
 
 /*
-   STLDODN '12 - WinRT Enumerations
+   HDC '12 - WinRT Enumerations
 */
 enum class WinRTEnum : unsigned short
 {

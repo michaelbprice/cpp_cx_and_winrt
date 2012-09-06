@@ -57,7 +57,7 @@ DirectXPage::DirectXPage() :
 void DirectXPage::OnPointerMoved(Object^ sender, PointerRoutedEventArgs^ args)
 {
 /*
-   STLDODN '12 - Automatic Type Deduction
+   HDC '12 - Basic - Automatic Type Deduction
 */
 	auto currentPoint = args->GetCurrentPoint(nullptr);
 	if (currentPoint->IsInContact)

@@ -153,7 +153,7 @@ void DirectXBase::CreateDeviceResources()
 		);
 
 /*
-   STLDODN '12 - nullptr Constant
+   HDC '12 - Basic - nullptr Constant
 */
 	// Release the swap chain (if it exists) as it will be incompatible with the new device.
 	m_swapChain = nullptr;
@@ -223,7 +223,8 @@ void DirectXBase::CreateWindowSizeDependentResources()
 	m_d3dRenderTargetSize.Height = swapDimensions ? windowWidth : windowHeight;
 
 /*
-   STLDODN '12 - Type casting
+   HDC '12 - Intermediate - Type casting
+   HDC '12 - WinRT Type Casting
 */
 	if (m_swapChain != nullptr)
 	{
